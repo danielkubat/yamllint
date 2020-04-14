@@ -13,4 +13,4 @@ Custom image based on original [Alpine Linux](https://hub.docker.com/_/alpine/) 
 docker pull danielkubat/yamllint:latest
 ```
 
-*Docker image is deployed to [Docker Hub](https://hub.docker.com/repository/docker/danielkubat/yamllint).*
+*Docker image is deployed to [Docker Hub](https://hub.docker.com/r/danielkubat/yamllint).*
