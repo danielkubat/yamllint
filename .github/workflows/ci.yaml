@@ -12,4 +12,5 @@ jobs:
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
         with:
-          dockerfile: "Dockerfile"
+          # https://github.com/hadolint/hadolint/wiki/DL3018
+          args: --ignore DL3018
