@@ -1,16 +1,12 @@
-name: Lint files
-
-on:
-  push:
-
+name: Lint Dockerfile
+on: push
 jobs:
-  linter:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Lint Dockerfile
-        uses: brpaz/hadolint-action@master
-        with:
-          # https://github.com/hadolint/hadolint/wiki/DL3018
-          args: --ignore DL3018
+    - uses: actions/checkout@master
+    - name: Haskell Dockerfile Linter
+      uses: docker://cdssnc/docker-lint-github-action
+      with:
+        # https://github.com/hadolint/hadolint/wiki/DL3018
+        args: --ignore DL3018
