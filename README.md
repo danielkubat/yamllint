@@ -1,4 +1,4 @@
-# yamllint ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/danielkubat/yamllint?style=flat-square)
+# yamllint ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/danielkubat/yamllint)
 
 Custom image based on original [Alpine Linux](https://hub.docker.com/_/alpine/) with [yamllint](https://github.com/adrienverge/yamllint) inside.
 
