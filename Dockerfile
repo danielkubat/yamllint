@@ -16,7 +16,7 @@ RUN apk --no-cache update && \
 
 # upgrade pip and install pip packages
 RUN python3 -m pip install --upgrade pip && \
-    pip3 install yamllint=="$YAMLLINT_VERSION"
+    pip3 install --no-cache-dir yamllint=="$YAMLLINT_VERSION"
 
 ENTRYPOINT ["yamllint"]
 CMD ["--help"]
