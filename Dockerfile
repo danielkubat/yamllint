@@ -14,9 +14,12 @@ ENV PACKAGES_APK "bash python3 ca-certificates"
 RUN apk --no-cache update && \
     apk --no-cache add --update $PACKAGES_APK
 
-# upgrade pip and install pip packages
-RUN python3 -m pip install --upgrade pip && \
-    pip3 install --no-cache-dir yamllint=="$YAMLLINT_VERSION"
+# install and upgrade pip
+RUN python3 -m ensurepip && \
+    pip3 install --upgrade pip
+
+# install yamllint
+RUN pip3 install --no-cache-dir yamllint=="$YAMLLINT_VERSION"
 
 ENTRYPOINT ["yamllint"]
 CMD ["--help"]
