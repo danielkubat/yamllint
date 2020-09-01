@@ -5,7 +5,7 @@ LABEL maintainer="dan.kubat@gmail.com"
 ENV PYTHON_UNBUFFERED=TRUE
 
 # yamllint package version
-ENV YAMLLINT_VERSION=1.23.0
+ENV YAMLLINT_VERSION=1.24.2
 
 # apk packages to install
 ENV PACKAGES_APK "bash python3 ca-certificates"
