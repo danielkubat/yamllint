@@ -5,7 +5,7 @@ Custom image based on original [Alpine Linux](https://hub.docker.com/_/alpine/) 
 ## Version matrix:
 
 - Alpine Linux *[3 (major)](https://hub.docker.com/_/alpine)*
-- yamllint *[1.25.0](https://github.com/adrienverge/yamllint/releases/tag/v1.25.0)*
+- yamllint *[1.26.0](https://github.com/adrienverge/yamllint/releases/tag/v1.25.0)*
 
 ## Pulling Docker image:
 
